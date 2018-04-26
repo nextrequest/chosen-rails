@@ -1,7 +1,7 @@
 //= depend_on_asset "chosen-sprite.png"
 //= depend_on_asset "chosen-sprite@2x.png"
-$chosen-sprite: url('chosen-sprite.png') !default;
-$chosen-sprite-retina: url('chosen-sprite@2x.png') !default;
+$chosen-sprite: image-url('chosen-sprite.png') !default;
+$chosen-sprite-retina: image-url('chosen-sprite@2x.png') !default;
 
 /* @group Base */
 .chosen-container {
@@ -72,6 +72,7 @@ $chosen-sprite-retina: url('chosen-sprite@2x.png') !default;
       cursor: pointer;
       opacity: 0;
       position: absolute;
+      width: 0;
     }
   }
   .chosen-default {
@@ -145,7 +146,8 @@ $chosen-sprite-retina: url('chosen-sprite@2x.png') !default;
   }
   &.chosen-container-single-nosearch .chosen-search {
     position: absolute;
-    clip: rect(0,0,0,0);
+    opacity: 0;
+    pointer-events: none;
   }
 }
 /* @end */
