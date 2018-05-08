@@ -135,6 +135,7 @@ $chosen-sprite-retina: image-url('chosen-sprite@2x.png') !default;
       font-family: sans-serif;
       line-height: normal;
       border-radius: 0;
+      background-image: none !important;
     }
   }
   .chosen-drop {
@@ -396,6 +397,7 @@ $chosen-sprite-retina: image-url('chosen-sprite@2x.png') !default;
   .chosen-search input[type="text"] {
     padding: 4px 5px 4px 20px;
     direction: rtl;
+    background-image: none !important;
   }
   &.chosen-container-single{
     .chosen-single div b {
